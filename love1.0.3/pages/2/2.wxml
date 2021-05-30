@@ -1,0 +1,61 @@
+<swiper class="banner" indicator-dots indicator-active-color="#fff" autoplay interval="3000" circular>
+  <swiper-item>
+    <image src="/image/2_pic1.jpg">海报</image>
+  </swiper-item>
+
+  <swiper-item>
+    <image src="/image/2_pic2.jpg">海报</image>
+  </swiper-item>
+
+  <swiper-item>
+    <image src="/image/2_wx_group.jpg" >二维码</image>
+  </swiper-item>
+</swiper>
+
+<view class="title">平安福刺绣</view>
+
+<view class="line1"></view>
+
+<view class='setting'>
+  <image class="pic" src="/image/phone.png" >联系方式</image>
+  <text>联系方式:  suyutong0321（WX）</text>
+</view>
+
+<view class='setting'>
+  <image class="pic" src="/image/time.png" >时间</image>
+  <text>活动时间：  4月25日 晚18：00-20：00</text>
+</view>
+
+<view class='setting'>
+  <image class="pic" src="/image/place.png" >地点</image>
+  <text>活动地点：  学活305</text>
+</view>
+
+<view class='setting'>
+  <image class="pic" src="/image/pay.png" >费用</image>
+  <text>活动费用：  免费</text>
+</view>
+
+<view class="line2"></view>
+
+<view class="text">活动详情介绍：</view>
+<view class="text">报名后领取材料包</view>
+
+<button class="button" bindtap="modalinput" > 报名 </button> 
+
+
+<modal id = "modal" hidden="{{hiddenmodalput}}" title="报名信息" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" form-type="submit">
+  <form bindsubmit="onSubmit">
+    <input name='name' class="input" placeholder="姓名：" ></input>
+    <input name='id' class="input" placeholder="学号：" > </input>
+    <input name='pay' class="input" placeholder="支付方式：" > </input>
+    <view class="ex">EX:先按确定再按提交</view>
+    <button class="submit" form-type="submit">确定</button>
+  </form>
+</modal>
+
+
+
+
+
+

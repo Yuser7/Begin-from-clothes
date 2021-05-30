@@ -1,0 +1,37 @@
+<image class='background' src="" mode="aspectFill"></image>
+
+<swiper class="banner" indicator-dots indicator-active-color="#fff" autoplay interval="3000" circular >
+  <swiper-item class="bannerItem">
+    <image src="/image/1_pic.jpg" bindtap="jumpPage1">约拍</image>
+  </swiper-item>
+
+  <swiper-item class="bannerItem">
+    <image src="/image/2_pic1.jpg" bindtap="jumpPage2">刺绣</image>
+  </swiper-item>
+
+</swiper>
+  
+<view class="new">最新活动</view>
+
+<view class="line"></view>
+
+<view class="out">
+  <view class="row" wx:for="{{dataList}}" bindtap="{{item.jumpPage}}">
+    <view class="pic">
+      <image src="{{item.url}}"></image>
+    </view>
+
+    <view class="text">
+      <view class="title"> {{item.title}}</view>
+
+      <view class="time">
+        <image class="biao" src="/image/time.png" >时间</image>
+        {{item.time}}</view>
+
+      <view class="place">
+        <image class="biao" src="/image/place.png" >地点</image>
+        {{item.place}}</view>
+
+    </view>
+  </view>
+</view>

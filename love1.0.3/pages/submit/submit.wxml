@@ -1,0 +1,31 @@
+
+<!--上传图片演示-->
+<form bindsubmit="submit">
+
+
+<!--帖子的标题-->
+<input class="title" value="{{value1}}" type="text" name='name' maxlength='100' placeholder='加个标题哟~'/>
+<view class="line0"></view>
+
+<!--帖子的内容-->
+<textarea class="text" bindblur="blur"  value="{{value2}}" auto-height  maxlength="500" name='content' placeholder='请输入正文~'>
+</textarea>
+
+
+<!--帖子的图片-->
+<view class="img_box">
+<view class="imgs" wx:for="{{tempFilePaths}}" wx:key="index">
+  <image src='{{item}}' bindlongpress="DeleteImg" bindtap="listenerButtonPreviewImage" data-index="{{index}}" mode='widthFix' />
+</view>
+<view class="imgs" wx:if="{{nowCount<9}}">
+  <view class="images" bindtap="chooseImage">
+    <image src='../../image/upload.png' mode='widthFix' />
+  </view>
+</view>
+</view>
+<view class="shanchu">长按删除图片</view>
+
+<!--提交按钮-->
+<button class="tijiao"  formType="submit">提交</button>
+</form>
+

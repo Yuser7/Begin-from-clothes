@@ -1,0 +1,123 @@
+page{
+  background: #ffffff;
+}
+
+.uploader-container{
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 400rpx;
+  background:#798a77;
+  border-radius: 20rpx;
+  box-shadow:0rpx 0rpx 0rpx 30rpx rgb(210, 211, 206);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.name{
+  margin-top: 20rpx;
+  color: #fff;
+  flex-direction: row;
+  font-size: 36rpx;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.count{
+  box-sizing: border-box;
+  color: #fff;
+  padding-top: 35rpx;
+}
+
+.info_left{
+  display: flex;
+  justify-content: space-around;
+}
+.myInfo button{
+  background: #fff;
+  width: 100rpx;
+}
+.other-item{
+  height: 100rpx;
+  padding: 0 20rpx;
+  line-height: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 38rpx;
+  font-weight:bold;
+}
+.kefu1{
+  margin-top:10rpx;
+  background-color:white;
+  margin-left: 5%;
+  padding-left: 0rpx;
+  font-size: 38rpx!important;
+}
+.kefu2{
+  margin-top:10rpx;
+  background-color:white;
+  color:white;
+}
+.setting{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  margin-top: 40rpx;
+}
+.line0{
+  margin-top: 38rpx;
+  margin-left:10%;
+  width:80%;
+  height:6rpx;
+  background:#798a77;
+}
+.line1{
+  margin-top: 18rpx;
+  margin-left:10%;
+  width:80%;
+  height:6rpx;
+  background:#798a77;
+}
+.line2{
+  margin-left:10%;
+  width:80%;
+  height:6rpx;
+  background:#798a77;
+}
+.tie{
+  margin-top: 25rpx;
+  margin-left: 9%;
+}
+.update{
+  margin-left: 9%;
+}
+.pic0{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 85rpx;
+  margin-right: 60rpx;
+}
+.pic1{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 65rpx;
+  margin-right: 60rpx;
+}
+.pic2{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 25rpx;
+  margin-right: 80rpx;
+}

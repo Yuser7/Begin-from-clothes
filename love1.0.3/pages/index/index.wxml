@@ -1,0 +1,31 @@
+
+<!--帖子的展示-->
+<view class="message">
+  <view class="message-item" wx:for="{{message}}" wx:key='key' data-id="{{item._id}}" bindtap="show">
+
+    <!--个人信息-->
+    <view class="top">
+      <image class="image" src="{{item.result[0].head}}" style="cover"></image>
+      <text>{{item.result[0].username}}</text>
+    </view>
+
+    <!--标题-->
+    <text class="title">{{item.title}}</text>
+
+    <!--内容-->
+    <text class="content">
+      {{item.content}}
+    </text>
+
+    <!--图片-->
+    <view class="images">
+      <image wx:for="{{item.url}}" wx:key='src' src="{{item}}"></image>
+    </view>
+
+    <!--评论和点赞-->
+    <view class="other">
+      <view><icon class="iconfont icon-xiaoxi1"></icon><text>{{item.messageNum}}</text></view>
+      <view><icon class="iconfont icon-dianzan"></icon><text>{{item.zan}}</text></view>
+    </view>
+  </view>
+</view>

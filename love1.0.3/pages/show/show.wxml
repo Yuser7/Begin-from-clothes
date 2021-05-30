@@ -1,0 +1,64 @@
+<!--pages/show/show.wxml-->
+<view class="message-item">
+
+<!--个人信息-->
+<view class="top">
+  <view>
+      <image class="image" src="{{userinfo.head}}" style="cover"></image>
+    <view class="top-right">
+      <view>{{userinfo.username}}</view>
+      <view>{{info.timeShow}}</view>
+    </view>
+  </view>
+  
+  <view wx:if="{{info.openid==openid}}" data-id="{{info._id}}" class="del1" bindtap="del1">删除</view>
+</view>
+
+<!--标题-->
+<view class="title">{{info.title}}</view>
+
+<!--内容-->
+<text class="content">{{info.content}}</text>
+
+<!--图片-->
+<view class="images">
+  <image wx:for="{{info.url}}"   src="{{item}}"></image>
+</view>
+
+<!--评论和点赞-->
+<view class="other">
+  <view><icon class="iconfont icon-xiaoxi1"></icon><text>{{info.messageNum}}</text></view>
+  <view wx:if="{{zan==true}}" bindtap="addTieZan" data-tid="{{info._id}}"><icon class="iconfont icon-dianzan love"></icon><text>{{info.zan}}</text></view>
+  <view wx:else="{{zan==false}}" bindtap="addTieZan" data-tid="{{info._id}}"><icon class="iconfont icon-dianzan"></icon><text>{{info.zan}}</text></view>
+</view>
+</view>
+
+<!--全部评论-->
+<view class="comment">
+  <view class="title">全部评论</view>
+  <view class="comment-item" wx:for="{{comments}}" wx:for-index="idx1" wx:for-item="itemTop" >
+
+    <view class="info" >
+      <!--评论人信息和时间-->
+      <view class="left">
+        <image class="image" src="{{itemTop.userinfo[0].head}}" style="cover"></image>
+        <view><view>{{itemTop.userinfo[0].username}}</view><view wx:if="{{itemTop.timeShow.length>1}}">{{itemTop.timeShow}}</view></view>
+      </view>
+      <!--删除-->
+      <view wx:if="{{itemTop.userinfo[0].openid==openid}}" data-tid="{{info._id}}" data-id="{{itemTop._id}}" data-index1="{{idx1}}" class="right del2" bindtap="del2">删除</view>
+    </view>
+
+    <!--评论内容-->
+    <view class="content" bindtap="answer" data-type="1"  data-id="{{itemTop._id}}" data-fid="{{itemTop._id}}" data-name='{{itemTop.userinfo[0].username}}'>{{itemTop.content}}</view>
+    <!--二级评论（所有回复）-->
+    <view class="answer">
+      <view wx:for="{{itemTop.answer}}" wx:for-index="idx2" wx:key='indexs'  bindtap="answer" data-type="2"  data-id="{{item._id}}" data-fid="{{itemTop._id}}" data-name='{{item.myname}}' class="answer-item"><image class="special" src="{{item.head}}"></image>回复<text class="hisname">{{item.hisname}}</text>{{item.content}}<text>{{item.timeShow}}</text><view data-tid="{{info._id}}" data-id="{{item._id}}" data-index1="{{idx1}}" data-index2="{{idx2}}" bindtap="del3" class="del3">删除</view></view>
+    </view>
+  </view>
+</view>
+
+
+<view class="send">
+  <input value="{{value}}"  type="text" bindblur='blur' placeholder="{{answer_author}}"/>
+  <view class="submit" bindtap="send" data-id="{{info._id}}">发送</view>
+</view>

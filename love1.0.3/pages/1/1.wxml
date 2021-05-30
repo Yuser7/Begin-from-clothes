@@ -1,0 +1,38 @@
+<swiper class="banner" indicator-dots indicator-active-color="#fff" autoplay interval="3000" circular>
+  <swiper-item>
+    <image src="/image/1_pic.jpg">海报</image>
+  </swiper-item>
+
+</swiper>
+
+<view class="title">约拍</view>
+
+<view class="line1"></view>
+
+<view class='setting'>
+  <image class="pic" src="/image/phone.png" >联系方式</image>
+  <text>联系方式:  1234567890（QQ）</text>
+</view>
+
+<view class='setting'>
+  <image class="pic" src="/image/time.png" >时间</image>
+  <text>活动时间：  自主选择</text>
+</view>
+
+<view class='setting'>
+  <image class="pic" src="/image/place.png" >地点</image>
+  <text>活动地点：  专景拍摄</text>
+</view>
+
+<view class='setting'>
+  <image class="pic" src="/image/pay.png" >费用</image>
+  <text>活动费用：  九宫格-119</text>
+</view>
+
+<view class="line2"></view>
+
+<view class="text">活动详情介绍：</view>
+<view class="text">挑选汉服->妆造->专人取景->后期精修</view>
+
+
+

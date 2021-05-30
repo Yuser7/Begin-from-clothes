@@ -1,0 +1,81 @@
+/* pages/submit/submit.wxss */
+form{
+  display: block;
+  width: 100%;
+  padding: 20rpx 17rpx;
+}
+.title{
+  margin-left: 2%;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.text{
+  margin-left: 2%;
+  font-size: 36rpx;  
+}
+.line0{
+  margin-left:2%;
+  margin-top: 20rpx;
+  width:90%;
+  height:6rpx;
+  background:#798a77;
+}
+textarea{
+  padding-right: 50rpx;
+  margin-top: 30rpx;
+  display: block;
+  width: 100%;
+  height: 550rpx !important;
+  box-sizing: border-box;
+}
+.img_box{
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 auto;
+}
+.imgs{
+  width:33.33333333%;
+  display: flex;
+  justify-content: center;
+  margin-bottom:20rpx;
+}
+.imgs image{
+  width:90%;
+  max-height:212rpx;
+  border:1px solid rgba(214, 212, 212, 0.1);
+}
+.imgs .images{
+  position:relative;
+}
+.images button{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.img_box .images{
+  width:90%;
+	height: 212rpx;
+  border:1px solid #E8E8E8;
+  border-radius:4rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img_box .images>image{
+  width:60rpx;
+	height:60rpx;
+}
+.tijiao{
+  margin-bottom: 10rpx;
+  width: 90%;
+  background-color:#798a77;
+  color: white;
+}
+.shanchu{
+  font-size: 36rpx;
+  color: grey;
+  text-align: center;
+}

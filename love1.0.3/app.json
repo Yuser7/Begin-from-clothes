@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/submit/submit",
+    "pages/me/me",
+    "pages/show/show",
+    "pages/myTie/myTie",
+    "pages/update/update",
+    "pages/activity/activity",
+    "pages/1/1",
+    "pages/2/2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#798a77",
+    "navigationBarTitleText": "始于衣冠，达于博远",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "white",
+    "color": "#4d503d",
+    "selectedColor":"#4d503d",
+    "list": [
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "首页",
+        "iconPath": "/image/activity.png",
+        "selectedIconPath": "/image/activity-act.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "论坛",
+        "iconPath": "/image/index.png",
+        "selectedIconPath": "/image/index-act.png"
+      },
+      {
+        "pagePath": "pages/submit/submit",
+        "text": "发帖",
+        "iconPath": "/image/submit.png",
+        "selectedIconPath": "/image/submit-act.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/image/me.png",
+        "selectedIconPath": "/image/me-act.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  
+}

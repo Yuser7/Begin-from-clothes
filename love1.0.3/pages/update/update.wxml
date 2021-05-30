@@ -1,0 +1,6 @@
+<view class="pic2"> <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fthumb.dev.qinsilk.com%2Funknown%2F20150930%2F1443584823224072761.png&refer=http%3A%2F%2Fthumb.dev.qinsilk.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1616293930&t=20e8e8f7dc63ffe4908ba6b0be9571ad"></image> </view>
+
+<text>尊敬的用户你好：</text>
+<text>我们将于</text>
+<text class="date">3月1日</text>
+<text>进行系统更新，请敬请期待！</text>

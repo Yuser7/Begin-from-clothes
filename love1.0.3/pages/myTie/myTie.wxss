@@ -1,0 +1,51 @@
+/* pages/myTie/myTie.wxss */
+@import "/image/font/iconfont.wxss";
+.message{
+  box-sizing: border-box;
+  background: #FDFDFE;
+}
+.message-item{
+  border-bottom: 13rpx solid #F4F4F4;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+}
+.top .image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-right: 25rpx;
+}
+.top text{
+  font-size: 40rpx;
+  font-weight: bold;
+  position: relative;
+  bottom: 30rpx;
+}
+.title{
+  margin: 20rpx 0 12rpx 0;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.content{
+  font-size: 30rpx;
+}
+.images{
+  display: flex;
+  justify-items: flex-start;
+  
+  width: auto;
+}
+.images image{
+  max-height: 280rpx;
+  margin-right: 10rpx;
+  max-width: 380rpx;
+}
+.other{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rpx;
+}.other .iconfont{
+  font-size: 30rpx;
+  margin-right: 17rpx;
+}

@@ -1,0 +1,44 @@
+<!--我的头像展示start-->
+<view class="myInfo">
+  <!--头像和昵称-->
+  <view wx:if="{{!openid}}">
+    <button open-type="getUserProfile" lang="zh_CN" bindtap="getUserProfile"> 点击登陆 </button>
+  </view>
+
+  <view class="uploader-container" wx:if="{{openid}}">
+    <image class="image" src="{{userinfo.avatarUrl}}" style="cover"></image>
+    <view class="name">{{userinfo.nickName}}</view>
+  </view>
+</view>
+
+<!--我的头像展示end-->
+
+<!--底部功能展示-->
+<view class="other">
+  <view class="other-item" bindtap="myTie">
+    <view class="tie">我的帖子</view>
+    <image class="pic0" bindtap="myTie" src="/image/right.png"></image>
+  </view>
+  <view class="line0"></view>
+  
+  <view class="other-item" bindtap="update">
+    <view class="update">活动更新</view>
+    <image class="pic1" bindtap="update" src="/image/right.png"></image>
+  </view>
+  <view class="line1"></view>
+
+  <view class="setting">
+    <button size="mini" open-type='contact' class='kefu1' session-from='weapp' style="width:35%;">联系客服</button>
+    <button size="mini" open-type='contact' class='kefu2' session-from='weapp' style="width:50%;">communicate</button>
+    <image class="pic2" src="/image/right.png"></image>
+  </view>
+  <view class="line2"></view>
+  
+</view>
+
+
+
+
+
+
+
